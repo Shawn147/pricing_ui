@@ -1,25 +1,21 @@
 "use client";
-import { Box, Button } from "@chakra-ui/react";
+import { Box, Button, Flex, Text } from "@chakra-ui/react";
 
 export default function Home() {
   return (
-    <Box style={{ alignItems: "center" }}>
-      <Box bgGradient="linear(to-l, #7928CA, #FF0080)" h={"50vh"}></Box>
-
-      <Box w="100%" h={"50vh"} bgGradient="linear(to-t, green.200, pink.500)" />
-
-      {/* <div
-        style={{
-          backgroundColor: "lightcoral",
-          height: size.height * 0.5,
-          width: size.width * 0.5,
-          position: "absolute",
-          zIndex: 111,
-          top: size.height * 0.25,
-          alignSelf: "center",
-          verticalAlign: "center",
-        }}
-      ></div> */}
-    </Box>
+    <Flex align="center" justify="center" direction={"column"}>
+      <Box
+        w={"100%"}
+        bgGradient="linear(to-l, #7928CA, #FF0080)"
+        h={"50vh"}
+      ></Box>
+      {/* <Text fontSize={32}>HEllo</Text> */}
+      <Box
+        w="50%"
+        h={"50vh"}
+        position="absolute"
+        bgGradient="linear(to-t, green.200, pink.500)"
+      />
+    </Flex>
   );
 }
